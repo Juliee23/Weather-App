@@ -1,3 +1,32 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #212529;
+  border-radius: 5px;
+}
 h1 {
-    color: blueviolet;
+  color: #878787;
+  height: 28px;
+  line-height: 28.8px;
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  color: #130303;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  margin: 0;
+  padding: 0;
 }
