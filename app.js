@@ -1,0 +1,35 @@
+function formatDate(timestamp) {
+    let date = new Date(timestamp);
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let days = [
+        "Sun", 
+        "Mon", 
+        "Tue", 
+        "Wed", 
+        "Thur", 
+        "Fri", 
+        "Sat"
+    ];
+    let day = days[date.getDay()];
+    return`${day} ${hours}:${minutes}`;
+}
+function displayTemperature(response) {
+    let temeperatureElement = document.querySelector("#temperature");
+    let cityElement = document.querySelector("#city");
+    let descriptionElement = document.querySelector("#description");
+    let humidityElement = document.querySelector("#humidity");
+    let windElement = document.querySelector("#wind");
+    let dateElement = document.querySelector("#date");
+    temeperatureElement.innerHTML = Math.round(response.data.main.temp);
+    cityElement.innerHTML = response.data.name;
+    descriptionElement.innerHTML = response.data.weather[0].description;
+    humidityElement.innerHTML = response.data.main.humidity;
+    windElement.innerHTML = Math.round(response.data.wind.speed);
+    dateElement.innerHTML = formatDate(response.data.dt * 1000);
+}
+
+let apiKey = "04bde8cc7f569f7c5603cdbc6deb89a3";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Johannesburg&appid=${apiKey}&units=metric`;
+
+axios.get(apiUrl).then(displayTemperature);

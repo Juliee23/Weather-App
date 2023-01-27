@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather-App</title>
   </head>
   <body>
@@ -20,10 +20,11 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-          <h1>Johannesburg</h1>
+          <h1 id="city"></h1>
           <ul>
-            <li>Thursday 20:31</li>
-            <li>Partly_cloudy</li>
+            <li id=>Last updated: <span id="date"></span>
+            </li>
+            <li id="description"></li>
           </ul>
           </div>
           <div class="row">
@@ -35,15 +36,16 @@
                 class="float-left"
               />
               <div class="float-left">
-              <strong>20</strong><span class="units">°C | <a href="#">°F</a></span>
+              <strong id="temperature"></strong><span class="units">°C | <a href="#">°F</a></span>
              </div>
             </div>
           </div>
             <div class="col-md-6">
               <ul>
-                <li>Precipitation: 2%</li>
-                <li>Humidity: 80%</li>
-                <li>Wind: 0.4 km/h</li>
+                <li>Humidity: <span id="humidity"></span> %
+                </li>
+                <li>Wind: <span id="wind"></span> km/h
+                </li>
               </ul>
             </div>
           </div>
@@ -59,5 +61,4 @@
 
     <script src="app.js"></script>
   </body>
-  <
 </html>
