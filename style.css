@@ -1,6 +1,12 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background: radial-gradient(
+    circle at 10% 20%,
+    rgb(231, 128, 128) 0%,
+    rgb(172, 96, 153) 62%,
+    rgba(90, 6, 79, 0.63) 100.7%
+  );
 }
 
 h1 {
