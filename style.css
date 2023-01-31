@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  color: #878787;
+  color: #220707;
   height: 28px;
   line-height: 28.8px;
   font-weight: 100;
@@ -38,9 +38,12 @@ li :first-letter {
   margin: 30px auto;
 }
 .weather-app {
-  padding: 20px;
-  border: 1px solid #212529;
-  border-radius: 5px;
+  border: 4px solid #22201f2d;
+  border-radius: 20px;
+  padding: 25px;
+  background-position: right;
+  max-width: fit-content;
+  margin: 0 auto
 }
 .overview {
   margin-bottom: 20px;
