@@ -1,20 +1,16 @@
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background: radial-gradient(
-    circle at 25% 50% , 
-    rgb(231, 128, 128) 20%,
-    rgb(172, 96, 153) 70%,
-    rgba(90, 6, 79, 0.63) 100%
-  );
-}
+  font-family: 'Kaushan Script', cursive;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/606/original/355e2feed25c57886c273e617b22f26c_original.png?1675433841");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
 
 h1 {
-  color: #220707;
+  color: rgb(252, 246, 246);
   height: 28px;
   line-height: 28.8px;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 0;
 }
 ul {
@@ -23,7 +19,7 @@ ul {
 }
 li {
   list-style: none;
-  color: #130303;
+  color: #0700006e;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -33,13 +29,14 @@ li {
 li :first-letter {
   text-transform: capitalize;
 }
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
 }
 .weather-app {
-  border: 4px solid #22201f2d;
-  border-radius: 20px;
+  border: transparent;
+  border-radius: 10px;
   padding: 25px;
   background-position: right;
   max-width: fit-content;
@@ -54,34 +51,28 @@ li :first-letter {
   width: 64px;
 }
 .weather-temperature strong {
-  color: rgb(3, 3, 24);
+  color: rgba(8, 8, 250, 0.952);
   font-weight: 400;
-  font-size: 64px;
-  line-height: 1;
+  font-size: 40px;
+  line-height: 0%;
 }
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -34px;
+  top: -20px;
 }
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
+
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #130303;
+  color: #fff;
 }
 .weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
+  font-size: 19px;
+  opacity: 0.9;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 .weather-forecast-temperatures {
   font-size: 13px;
@@ -89,4 +80,8 @@ li :first-letter {
 .row {
   display: flex;
   flex-direction: row;
+}
+small {
+  text-align: center;
+  color: #fff;
 }

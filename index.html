@@ -11,12 +11,13 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather-App</title>
   </head>
   <body>
-    <div class="container">
+  <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <form id="search-form" class="mb-3">
@@ -24,7 +25,7 @@
               <div class="col-9">
                 <input
                 type="search"
-                placeholder="enter city"
+                placeholder="Enter city... 👀"
                 class="form-control"
                 id="city-input"
                 autocomplete="off"
@@ -57,9 +58,7 @@
               />
               <div class="d-flex flex-row mb-3">
               <strong id="temperature"></strong>
-              <span class="units">
-                <a href="#" id="celsius-link" class="active">°C</a> | 
-                <a href="#" id="fahrenheit-link">°F</a></span>
+              <span class="units">°C</span>
              </div>
             </div>
           </div>
@@ -74,6 +73,7 @@
           </div>
           <div class="weather-forecast" id="forecast">
        </div>
+       <br  />
         <small>
           <a href="https://github.com/Juliee23/Weather-App" target="_blank">
             Open-soucre code</a
