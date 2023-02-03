@@ -6,7 +6,7 @@ body {
   }
 
 h1 {
-  color: rgb(252, 246, 246);
+  color: rgb(7, 0, 0);
   height: 28px;
   line-height: 28.8px;
   font-weight: 100;
@@ -19,7 +19,7 @@ ul {
 }
 li {
   list-style: none;
-  color: #0700006e;
+  color: #070000d8;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
